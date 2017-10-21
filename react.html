@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    <script>
+        var child = React.createElement('li', null, 'Text Content');
+        var root = React.createElement('ul', { className: 'my-list' }, child);
+        ReactDOM.render(root, document.getElementById('root'));
+    </script>
+</body>
+</html>
